@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Cloud Website</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            margin: 40px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0b7dda;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 10px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Deployed on Cloud using GitHub Pages</p>
+    </header>
+
+    <main>
+        <h2>Simple Interactive Page</h2>
+        <p id="message">Click the button to see magic</p>
+
+        <button onclick="changeText()">Click Me</button>
+    </main>
+
+    <footer>
+        <p>© 2026 My Cloud Website</p>
+    </footer>
+
+    <!-- INTERNAL JAVASCRIPT -->
+    <script>
+        function changeText() {
+            document.getElementById("message").innerHTML =
+                "🎉 Your website is running successfully on the cloud!";
+        }
+    </script>
+
+</body>
+</html>
